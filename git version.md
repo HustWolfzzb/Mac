@@ -8,7 +8,9 @@
     cd D:/团队/龚珏/GUI
     ls
     git init 
-      
+    git>
+    -
+
 
 This is an H1
 =============
