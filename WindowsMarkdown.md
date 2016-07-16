@@ -1,8 +1,8 @@
 
 #大魔王要开始征服程序员之路啦！！！！！！！！
-'now i have the chance to be a programmer '
-'i am very happy, i wannna to tell my girls but i cann't
-===========
+`now i have the chance to be a programmer`
+`i am very happy, i wannna to tell my girls but i cann't`
+===============================
 
 ![mahua](mahua-logo.jpg)
 ## 不得不承认，sublime 和 git真是神器一样的存在啊
@@ -33,14 +33,15 @@
 
 
 >this is a blockquote with two paragraphs.
->donec sit amet nisl
+donec sit amet nisl
+
 > 这个貌似就是在前面？
 *********
 * red
-*green
-*blue 
+* green
+* blue 
 - white
--black
+- black
 
 1. i am serious 
 2. i love fansiyu
@@ -51,5 +52,8 @@
 
 
 now i don't know what is this mean ?
+
+this is [baidu][http://www.baidu.com] and this is [HUB system][] 
+[HUB]:http://www.hudbt.hust.edu.cn
 
 
