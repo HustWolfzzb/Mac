@@ -4,4 +4,9 @@ i don't know if i will do well on this
 but i know i will do my best 
 ok
 that is all
-
+#bash 
+echo 
+{
+printf("i am a good boy ")
+return 0
+}
