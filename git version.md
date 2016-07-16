@@ -1,5 +1,5 @@
-'now i have the chance to be a programmer '
-'i am very happy, i wannna to tell my girls but i cann't
+'now i have the chance to be a programmer'
+'i am very happy, i wannna to tell my girls but i cann't'
 ===========
 
 ![mahua](mahua-logo.jpg)
@@ -170,7 +170,7 @@ Please don't use any `<blink>` tags.
 
 
 *'
-`‘这是一个普通段落。 ’`
+'这是一个普通段落。'
 <table>
 <tr>
 <td>Foo</td>
