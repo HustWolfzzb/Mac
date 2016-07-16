@@ -10,3 +10,18 @@ echo
 printf("i am a good boy ")
 return 0
 }
+
+#`now what i want to do is that i will be a good man`
+
+    #bash first program 
+    echo 
+    what i need to do is that 
+    viod is what 
+
+这是我目前所学会的东西
+================
+i don't know how to face Teacher Zhang 
+now i am so scaried
+*who can help me?
+\*what is the goal\*
+
