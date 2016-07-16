@@ -54,6 +54,6 @@ donec sit amet nisl
 now i don't know what is this mean ?
 
 this is [baidu](http://www.baidu.com) and this is [HUB system][HUB] 
-[HUB]:http://www.hudbt.hust.edu.cn
+[HUB]:http://hudbt.hust.edu.cn
 
 
