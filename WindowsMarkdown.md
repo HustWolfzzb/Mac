@@ -56,4 +56,4 @@ now i don't know what is this mean ?
 this is [baidu](http://www.baidu.com) and this is [HUB system][HUB] 
 [HUB]:http://hudbt.hust.edu.cn
 
-
+![hiahia](http://cms-bucket.nosdn.127.net/catchpic/D/D3/D327194C78DFC5D6821D5C56D91A5FC5.jpg)
