@@ -1,21 +1,27 @@
-'now i have the chance to be a programmer'
-'i am very happy, i wannna to tell my girls but i cann't'
-===========
+`now i have the chance to be a programmer`
+`i am very happy, i wannna to tell my girls but i cann't`
+========================================================
 
 ![mahua](mahua-logo.jpg)
-## 不得不承认，sublime 和git确实是神器
+# 不得不承认，sublime 和git确实是神器
     #bash
     cd D:/团队/龚珏/GUI
     ls
     git init 
     git>
-    -
+    ssh -keygen -t rsa -C "1184827350@qq.com"
+    add ssh key 
+    git add "filename"
+    git commit -m "sth"
+    git remote add origin http://github.com/HustWolfzzb/git.git
+    git push -u origin master
 
 
-This is an H1
+
+**This is an H1**
 =============
 
-This is an H2
+** This is an H2 **
 -------------
 # 这是 H1
 
