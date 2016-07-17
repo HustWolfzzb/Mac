@@ -32,7 +32,7 @@
 
 
 
-#`this is [百度](http://www.baidu.com)`
+#`this is [百度](http://www.baidu.com/)`
 
 >`hiahia`
 >  now i wanna to have a try of part qiangdiao 
