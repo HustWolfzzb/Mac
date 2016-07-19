@@ -30,6 +30,16 @@
 ###### 这是 H6
 
 
+
+
+this is [百度](http://www.baidu.com/"baidu a  acaoni laomu")
+
+>`hiahia`
+>  now i wanna to have a try of part qiangdiao 
+
+
+
+
 # 这是 H1 #
 
 ## 这是 H2 ##
