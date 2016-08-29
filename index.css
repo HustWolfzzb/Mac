@@ -1,5 +1,12 @@
 h1{
-	text-align:center;color:red
+	text-align:center;
+	color:red
+}
+h3.bolder{
+	text-align: center;
+	color:red;
+	font-weight: bolder;
+
 }
 .ar{text-align:right;font-size:15px;}
 .lr{text-align:left;font-size:15px;color:}
