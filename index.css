@@ -16,7 +16,7 @@ p{text-indent:right;line-height:7mm;}
 		 table{font-size: 12px;
 		 	font-family: "幼圆";}
 		 	.div3{width: 820px;
-		 		height: 340px;
+		 		height: 350px;
 		 		border-style: solid;
 		 		border-color: #ffeedd;
 		 		border-width: 10px;
@@ -35,3 +35,15 @@ p{text-indent:right;line-height:7mm;}
 		 		}
 		 		ul{font-size: 15px;
 		 			font-family: "楷体";}
+		 	.div6{width: 820px;
+		 		height: 100px;
+		 		border-style: solid;
+		 		border-color: #ffeedd;
+		 		border-width: 10px;
+		 		border-radius:90px;}
+		 	.div7{width: 720px;
+		 		height: 100px;
+		background-color:#d2e7ff;}
+			.div8{width: 720px;
+		 		height: 350px;
+		background-color:#d2e7ff;}
