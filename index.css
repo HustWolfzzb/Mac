@@ -8,20 +8,34 @@ h3.bolder{
 	font-weight: bolder;
 
 }
-.ar{text-align:right;font-size:15px;}
-.lr{text-align:left;font-size:15px;color:}
-p{text-indent:right;line-height:7mm;}
-.div1{height: 220px;
-			width: 820px;
-			background-image:  url(logo.jpg);
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;}
-	.div2{width: 820px;
-		background-color:#d2e7ff;
-		 }
-		 table{font-size: 12px;
+h3.bolder:hover
+{   
+ 	font-weight: bold;
+color: #ffffff}
+p
+{text-indent:right;line-height:7mm;}
+
+table
+    {font-size: 12px;
+	   .ar
+	          {text-align:right;font-size:15px;
+	   	       font-family: "楷体"；}
+       .lr
+              {text-align:left;font-size:15px;color:}
+
 		 	font-family: "幼圆";}
+
+		 	.div1{height: 220px;
+			       width: 100;
+			       background-image: url(logo.jpg);
+			       background-position: center;
+			       background-size: cover;
+			      background-repeat: no-repeat;
+			       }
+	       
+		 	.div2{width:100;
+		        background-color:#d2e7ff;
+		           }
 		 	.div3{width: 820px;
 		 		height: 350px;
 		 		border-style: solid;
