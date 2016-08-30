@@ -10,16 +10,38 @@ h3.bolder{
 }
 h3.bolder:hover
 {   
- 	font-weight: bold;
-color: #ffffff}
+ 	font-weight: bolder;
+    color: #ffadaf;
+    text-decoration:none;
+    display: block;
+     }
+
+h3.link:visited
+{
+	background-color: #F0F0F0;
+	color: #461737;
+}
+
 p
 {text-indent:right;line-height:7mm;}
 
-table
-    {font-size: 12px;
-	   .ar
-	          {text-align:right;font-size:15px;
-	   	       font-family: "楷体"；}
+body.gundong
+{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	scrollBar-face-color:green;
+	scrollBar-hightLight-color:red;
+	scrollBar-3dLight-color:orange;
+	scrollBar-darkshadow-color:blue;
+	scrollBar-shadow-color:yellow;
+	scrollBar-arrow-color:purple;
+	scrollBar-track-color:black;
+	scrollBar-base-color:pink;
+}
+
+table.big
+    {font-size: 12px;	
+	   
        .lr
               {text-align:left;font-size:15px;color:}
 
@@ -36,23 +58,29 @@ table
 		 	.div2{width:100;
 		        background-color:#d2e7ff;
 		           }
-		 	.div3{width: 820px;
+		 	.div3{width: 100;
 		 		height: 350px;
 		 		border-style: solid;
 		 		border-color: #ffeedd;
 		 		border-width: 10px;
-		 		border-radius:90px;}
-		 	.div4{width: 810px;
+		 		border-radius:90px;
+		 		margin: 10px;
+		 	}
+		 	.div4{width: 300px;
 		 		height: 150px;
 		 		text-align: left;
-		 		border-bottom-style: dotted;
+		 		padding-left: 20px;
+		 		padding-top: 10px;	
+		 		border-bottom-style: dashed;
 		 		border-bottom-color: #ffeedd;
 		 		border-bottom-width: 2px;
+		 		box-ordinal-group: 2;
 		 		}
 		 	.div5{
-		 			width: 820px;
+		 			width: 300px;
 		 			height: 150px;
 		 			text-align: left;
+		 			box-ordinal-group:3;
 		 		}
 		 		ul{font-size: 15px;
 		 			font-family: "楷体";}
@@ -68,3 +96,20 @@ table
 			.div8{width: 720px;
 		 		height: 350px;
 		background-color:#d2e7ff;}
+		    .wai
+		    {
+            width: 200px;
+            height: 200px;
+            border: 1px #993399 solid;
+            padding-left: 20px;
+
+		    }
+		    img.out
+		    {
+		    	max-height: 300px;
+		    	max-width: 400px;
+		    	padding-left: 600px;
+		    	padding-top: 10px;
+		    }
+
+
