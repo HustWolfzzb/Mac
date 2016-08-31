@@ -48,9 +48,9 @@ table.big
 		 	font-family: "幼圆";}
 
 		 	.div1{height: 220px;
-			       width: 100;
+			       width: 820px;
 			       background-image: url(logo.jpg);
-			       background-position: center;
+			       background-position:left;
 			       background-size: cover;
 			      background-repeat: no-repeat;
 			       }
@@ -58,13 +58,13 @@ table.big
 		 	.div2{width:825px;
 		        background-color:#d2e7ff;
 		           }
-		 	.div3{width: 100;
+		 	.div3{width: 820px;
 		 		height: 350px;
 		 		border-style: solid;
 		 		border-color: #ffeedd;
 		 		border-width: 10px;
 		 		border-radius:90px;
-		 		margin: 10px;
+		 		margin: 2px;
 		 	}
 		 	.div4{width: 300px;
 		 		height: 150px;
@@ -95,10 +95,6 @@ table.big
 		        background-color:#d2e7ff;}
 			.div8{width: 720px;
 		 		height: 350px;
-<<<<<<< HEAD
-		        :wq
-
-=======
 		background-color:#d2e7ff;
 		    .wai
 		    {
@@ -115,6 +111,10 @@ table.big
 		    	padding-left: 600px;
 		    	padding-top: 10px;
 		    }
+		    input.radius
+		    {
+		    	border-radius: 5px;
+		    	border-style: solid;
+		    }
 
 
->>>>>>> b0997fb61bf237d95adbab37847cdb1c896410ef
