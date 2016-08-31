@@ -33,7 +33,7 @@ table
 			      background-repeat: no-repeat;
 			       }
 	       
-		 	.div2{width:100;
+		 	.div2{width:825px;
 		        background-color:#d2e7ff;
 		           }
 		 	.div3{width: 820px;
@@ -64,7 +64,7 @@ table
 		 		border-radius:90px;}
 		 	.div7{width: 720px;
 		 		height: 100px;
-		background-color:#d2e7ff;}
+		        background-color:#d2e7ff;}
 			.div8{width: 720px;
 		 		height: 350px;
-		background-color:#d2e7ff;}
+		         background-color:#d2e7ff;}
