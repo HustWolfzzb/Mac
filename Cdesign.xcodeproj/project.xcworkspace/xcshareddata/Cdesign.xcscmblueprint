@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B299B23B55932338DE04521D8D02F627C9151F77",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B299B23B55932338DE04521D8D02F627C9151F77" : 0,
+    "FDA51B93C14D16896E552D17441A90680B913511" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "384F65CC-3F5D-4348-9C45-F352FB36BA2B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B299B23B55932338DE04521D8D02F627C9151F77" : "git\/",
+    "FDA51B93C14D16896E552D17441A90680B913511" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Cdesign",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Cdesign.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HustWolfzzb\/Design.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B299B23B55932338DE04521D8D02F627C9151F77"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:HustWolfzzb\/git.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FDA51B93C14D16896E552D17441A90680B913511"
+    }
+  ]
+}
