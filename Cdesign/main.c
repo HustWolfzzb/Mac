@@ -384,15 +384,15 @@
 //int main()
 //{
 //    int i,j;
-//    for (i=101; i<200; i++)
+//    for (i=101; i<2000; i++)
 //    {
-//        for (j=2; j<i; j++)
+//        for (j=2; j<=i; j++)
 //        {
 //            if( i%j==0)
 //
 //            break;
 //                };
-//        if (j>=i)      //这个地方很不解，我就在想。j的取值不是根据j<i来的嘛。那么就算跳出来，j也还是没有脱离i的限制吧，那么为何还会有j>i这个if条件呢？
+//        if (j>=i)      //这个地方很不解，我就在想。j的取值不是根据j<i来的嘛。那么就算跳出来，j也还是没有脱离i的限制吧，那么为何还会有j>i这个if条件呢？后来龚珏告诉我。原来是只要j==i这个条件，
 //        {
 //
 //         printf("%d 是素数\n",i);
@@ -473,3 +473,405 @@
 ////    }
 ////    return 0;
 ////}
+
+
+
+
+
+//                               C语言程序设计经典100例－－第十四例
+
+//
+// int main()
+// {
+// 	int i;
+//     int n;
+// 	printf("请输入你要求的数：\n");
+//     scanf("%d",&n);
+// 	printf("你所求的数的因式分解：%d=",n);
+// 	//另外的思路：
+//     
+////     for(i = 2; i * i <= n;) {
+////         if(n % i == 0) {
+////             printf("%d * ", i);
+////             n /= i;
+////         }
+////         else
+////             i++;
+////     }
+//
+//     
+//     for (i = 2 ; i <=n; i++)//这里出现了一个错误，那就是我没有考虑当i＝n／i的时候，这时候仍然要写进去，但是在for中我又限定了i<n！！
+// 	{
+//       while(n%i==0)
+//        {
+//            printf("%d",i);
+//            n=n/i;
+//            if (n!=1) {
+//                printf("*");//这里总共出现过几处错误：首先是用do whlie 而不是while导致错误，然后是关于n/＝放在哪里的问题纠结了一会，
+//                      };
+//        };
+//        
+//    };
+//     printf("\n");
+// 	return 0;
+// }
+
+//
+////
+////  int main()
+////  {
+////      int n,i;
+////      printf("请输入整数：");
+////      scanf("%d",&n);
+////      printf("%d=",n);
+////      for(i=2;i<=n;i++)
+////      {
+////          while(n%i==0)
+////          {
+////              printf("%d",i);
+////              n/=i;
+////              if(n!=1) printf("*");
+////          }
+////      }
+////    
+////      printf("\n");
+////      return 0;
+////  }
+
+
+
+
+//                               C语言程序设计经典100例－－第十五例
+
+
+// int main(int argc, char const *argv[])
+// {
+//     int x;
+// 	char g;
+// 	printf("please put in your number\n");
+// 	scanf("%d",&x);
+//     g=((x>=90)?'A':((x>60)?'B':'C'));
+//// g=(x>90)?A:((x>60)?B:C); 啊 卧槽，忘了char表达的时候要加一个‘’了罪过罪过
+//     printf("该生的成绩是：%c\n",g );
+//
+// 	return 0;
+// }
+
+// // int main()
+// // {
+// //     int score;
+// //     char grade;
+// //     printf("请输入分数： ");
+// //     scanf("%d",&score);
+// //     grade=(score>=90)?'A':((score>=60)?'B':'C');
+// //     printf("%c\n",grade);
+// //     return 0;
+// // }
+
+
+
+//                               C语言程序设计经典100例－－第十六例  这个算法不怎么想看，过阵子再回来看好了
+
+
+// int main()
+// {
+//     int a,b,t,r;
+//     printf("请输入两个数字：\n");
+//     scanf("%d %d",&a,&b);
+//     if(a<b)
+//     {t=b;b=a;a=t;}
+//     r=a%b;
+//     int n=a*b;
+//     while(r!=0)
+//     {
+//         a=b;
+//         b=r;
+//         r=a%b;
+//     }
+//     printf("这两个数的最大公约数是%d，最小公倍数是%d\n",b,n/b);
+    
+//     return 0;
+// }
+
+
+
+
+//                               C语言程序设计经典100例－－第十七例
+
+
+
+//int main()
+//{
+//	char c;
+//	int letter=0,space=0,digits=0,others=0;
+//	printf("write somethng please:\n");
+//	while((c=getchar())!='\n')
+//	{
+//		if ((c>='a'&&c<='z')||(c>='A'&&c<='Z'))
+//		{
+//			letter++;
+//		}
+//		else if (c>='0'&&c<='9')
+//		{
+//			digits++;
+//		}
+//		else if (c==' ')
+//		{
+//			space++;
+//		}
+//		else others++;
+//	};
+//	printf("字母=%d,数字=%d,空格=%d,其他=%d\n",letter,digits,space,others);
+//	return 0;
+//}
+
+
+
+
+
+
+//                               C语言程序设计经典100例－－第十八例
+
+//int main()
+//{
+//    int s=0,a,n,t;
+//    printf("请输入 a 和 n：\n");
+//    scanf("a=%d,n=%d",&a,&n);
+//    t=a;
+//    while(n>0)
+//    {
+//        s+=t;
+//        a=a*10;
+//        t+=a;
+//        n--;
+//    }
+//    printf("a+aa+...=%d\n",s);
+//    return 0;
+//}
+//
+
+
+//int main()      //卧槽。 这个一定有问题，找机会要解决掉
+//{
+//    int a,b,c,d=0;
+//    printf("type something:\n");
+//scanf("%d,%d",&b,&c);
+//  //  b=7;c=6;
+//    int f=b;
+//    for (; c>0; c--) {
+//
+//        d+=b;
+//        a=b;
+//        b+=(10*a);
+//    };
+//    printf("%d\n",d-f*10);
+//    return 0;
+//}
+//
+//
+
+//                               C语言程序设计经典100例－－第十九例
+
+//
+//#define N 1000
+//int main()
+//{
+//    int i,j,k,n,sum;
+//    int a[256];
+//    for(i=2;i<=N;i++)
+//    {
+//        sum=a[0]=1;
+//        k=0;
+//        for(j=2;j<=(i/2);j++)
+//        {
+//            if(i%j==0)
+//            {
+//                sum+=j;
+//                a[++k]=j;
+//            }
+//            
+//        }
+//        if(i==sum)
+//        {
+//            printf("%d=%d",i,a[0]);
+//            for(n=1;n<=k;n++)
+//                printf("+%d",a[n]);
+//            printf("\n");
+//        }
+//        
+//    }
+//    return 0;
+//}
+//
+
+//                               C语言程序设计经典100例－－第二十例
+
+
+
+
+//int main()
+//{
+//    int n;
+//    double sum=100,h=100.0;
+//    for (n=2;n<=10; n++)
+//    {
+//       h/=2;
+//        sum+=h*2;
+//        printf("h:%f\n",h);
+//       
+//    };
+//    printf("sum:%f\n",sum);
+//    return 0;
+//    
+//}
+//
+////int main()
+////{
+////    float h,s;
+////    h=s=100;
+////    h=h/2; //第一次反弹高度
+////    for(int i=2;i<=10;i++)
+////    {
+////        s=s+2*h;
+////        h=h/2;
+////    }
+////    printf("第10次落地时，共经过%f米，第10次反弹高%f米\n",s,h);
+////    return 0;
+////}
+
+
+
+//                               C语言程序设计经典100例－－第二十一例
+
+
+//
+//int main(){
+//    int day, x1 = 0, x2;
+//    day=9;
+//    x2=1;
+//    while(day>0)
+//    {
+//        x1=(x2+1)*2;  // 第一天的桃子数是第2天桃子数加1后的2倍
+//        x2=x1;
+//        day--;
+//    }
+//    printf("总数为 %d\n",x1);
+//    
+//    return 0;
+//}
+//
+
+
+
+//                               C语言程序设计经典100例－－第二十二例
+
+
+//int main()
+//{
+//    char i,j,k;
+//    for(i='x';i<='z';i++) {
+//        for(j='x';j<='z';j++) {
+//            if(i!=j) {
+//                for(k='x';k<='z';k++) {
+//                    if(i!=k&&j!=k) {
+//                        if(i!='x'&&k!='x'&&k!='z') {
+//                            printf("顺序为：a--%c\tb--%c\tc--%c\n",i,j,k);
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
+
+
+//                               C语言程序设计经典100例－－第二十三例
+
+
+
+  // 第一层的for 也就是最外面的for控制行数，每当第一层的for的i改变一次就有\n 然后内部的两个for 一个控制空格 一个控制＊的出现，十分精妙，形成互补。两个for各自执行完毕之后分别把结果打在同一行中进行put out
+//int main()
+//{
+//    int i,j,k;
+//    for(i=0;i<=10;i++) {
+//        for(j=0;j<=9-i;j++) {
+//            printf(" ");
+//        }
+//        for(k=0;k<=2*i;k++) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    for(i=0;i<=9;i++) {
+//        for(j=0;j<=i;j++) {
+//            printf(" ");
+//        }
+//        for(k=0;k<=18-2*i;k++) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    
+//}
+//                               C语言程序设计经典100例－－第二十四例
+
+//int main()
+//{
+//    int i,t;
+//    float a=1,b=2,sum=0;
+//    for (i=0; i<20; i++)
+//    {
+//        sum=sum+b/a;
+//        t=a+b;
+//        a=b;
+//        b=t;
+//    }
+//    printf("sum:%f\n",sum);
+//    return 0;
+//    
+//}
+//                               C语言程序设计经典100例－－第二十五例
+//
+////int main()
+////{
+////    int i;
+////    long double sum,mix;
+////    sum=0,mix=1;
+////    for(i=1;i<=20;i++)
+////    {
+////        mix=mix*i;
+////        sum=sum+mix;
+////    }
+////    printf("%Lf\n",sum);
+////}
+//
+//
+//int main()
+//{
+//    long double sum=0,mix=1;
+//    int i,j;
+//    for(i=1;i<=20;i++)
+//    {
+//        for(j=1;j<=i;j++)
+//        {
+//            mix=mix*j;
+//           
+//        };
+//        printf("%d的阶乘是：%Lf\n",i,mix);
+//        sum=mix+sum;
+//        mix=1;
+//    };
+//    printf("%Lf \n",sum);
+//    return 0;
+//    
+//}
+//                               C语言程序设计经典100例－－第二十六例
+//                               C语言程序设计经典100例－－第二十七例
+//                               C语言程序设计经典100例－－第二十八例
+//                               C语言程序设计经典100例－－第二十九例
+//                               C语言程序设计经典100例－－第三十例
+//                               C语言程序设计经典100例－－第三十一例
+//                               C语言程序设计经典100例－－第三十二例
+//                               C语言程序设计经典100例－－第三十三例
+
+
