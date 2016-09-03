@@ -866,12 +866,268 @@
 //    
 //}
 //                               C语言程序设计经典100例－－第二十六例
-//                               C语言程序设计经典100例－－第二十七例
+
+
+
+//int main()
+//{
+//    int i;
+//    int fact();
+//    for(i=0;i<6;i++){
+//        printf("%d!=%d\n",i,fact(i));
+//    }
+//}
+//int fact(int j)
+//{
+//    int sum;
+//    if(j==0){
+//        sum=1;
+//    } else {
+//        sum=j*fact(j-1);
+//    }
+//    return sum;
+//}
+//                               C语言程序设计经典100例－－第二十七例  这个不太懂 找个机会问龚珏！！！
+
+//int main()
+//{
+//    int i=5;
+//    void palin(int n);
+//    printf("请输入5个字符\40:\40");
+//    palin(i);
+//    printf("\n");
+//}
+//void palin(n)
+//  int n;
+//{
+//    char next;
+//    if(n<=1) {
+//        next=getchar();
+//        printf("相反顺序输出结果\40:\40");
+//        putchar(next);
+//    } else {
+//        next=getchar();
+//        palin(n-1);
+//        putchar(next);
+//    }
+//}
+
+
 //                               C语言程序设计经典100例－－第二十八例
+
+//
+//int age(n)
+//int n;
+//{
+//    int c;
+//    if(n==1)
+//    {
+//        c=10;
+//    }
+//    else c=age(n-1)+2;
+//    return c;
+//    
+//}
+//int main()
+//{
+//    printf("%d\n",age(5));
+//}
+//
+//int age(n)
+//int n;
+//{
+//    int c;
+//    if(n==1) c=10;
+//    else c=age(n-1)+2;
+//    return(c);
+//}
+//int main()
+//{
+//    printf("%d\n",age(5));
+//}
+
+
+
 //                               C语言程序设计经典100例－－第二十九例
+
+//int main( )
+//{
+//    long a,b,c,d,e,x;
+//    printf("请输入 5 位数字：");
+//    scanf("%ld",&x);
+//    a=x/10000;        /*分解出万位*/
+//    b=x%10000/1000;   /*分解出千位*/
+//    c=x%1000/100;     /*分解出百位*/
+//    d=x%100/10;       /*分解出十位*/
+//    e=x%10;           /*分解出个位*/
+//    if (a!=0){
+//        printf("为 5 位数,逆序为： %ld %ld %ld %ld %ld\n",e,d,c,b,a);
+//    } else if(b!=0) {
+//        printf("为 4 位数,逆序为： %ld %ld %ld %ld\n",e,d,c,b);
+//    } else if(c!=0) {
+//        printf("为 3 位数,逆序为：%ld %ld %ld\n",e,d,c);
+//    } else if(d!=0) {
+//        printf("为 2 位数,逆序为： %ld %ld\n",e,d);
+//    } else if(e!=0) {
+//        printf("为 1 位数,逆序为：%ld\n",e);
+//    }
+//}
+
 //                               C语言程序设计经典100例－－第三十例
-//                               C语言程序设计经典100例－－第三十一例
-//                               C语言程序设计经典100例－－第三十二例
+
+//int main( )
+//{
+//    long ge,shi,qian,wan,x;
+//    printf("请输入 5 位数字：");
+//    scanf("%ld",&x);
+//    wan=x/10000;        /*分解出万位*/
+//    qian=x%10000/1000;  /*分解出千位*/
+//    shi=x%100/10;       /*分解出十位*/
+//    ge=x%10;            /*分解出个位*/
+//    if (ge==wan&&shi==qian) { /*个位等于万位并且十位等于千位*/
+//        printf("这是回文数  you so good\n");
+//    } else {
+//        printf("这不是回文数 you terrible\n");
+//    }
+//}
+//                               C语言程序设计经典100例－－第三十一例  在Xcode上实现不了！！！不知道为什么，我看着逻辑是还可以的
+
+//int main()
+//{
+//    char i,j;
+//    printf("请输入第一个字母:\n");
+//    scanf("%c",&i);
+//    getchar();//scanf("%c",&j);的问题，第二次是读入的一个换行符，而不是输入的字符，因此需要加一个getchar() 吃掉换行符
+//    switch(i)
+//    {
+//        case 'm':
+//            printf("monday\n");
+//            break;
+//        case 'w':
+//            printf("wednesday\n");
+//            break;
+//        case 'f':
+//            printf("friday\n");
+//            break;
+//        case 't':
+//            printf("请输入下一个字母\n");
+//            scanf("%c",&j);
+//            if (j=='u') {printf("tuesday\n");break;}
+//            if (j=='h') {printf("thursday\n");break;}
+//        case 's':
+//            printf("请输入下一个字母\n");
+//            scanf("%c",&j);
+//            if (j=='a') {printf("saturday\n");break;}
+//            if (j=='u') {printf("sunday\n"); break;}
+//        default :
+//            printf("error\n"); break;
+//    }
+//    return 0;
+//}
+//
+
+//                               C语言程序设计经典100例－－第三十二例  看不太懂，先跳过去，到时候定点突破！！！！
+
+
+
+//char* deleteCharacters(char * str, char * charSet)
+//{
+//    int hash [256];
+//    if(NULL == charSet)
+//        return str;
+//    for(int i = 0; i < 256; i++)
+//        hash[i] = 0;
+//    for(int i = 0; i < strlen(charSet); i++)
+//        hash[charSet[i]] = 1;
+//    int currentIndex = 0;
+//    for(int i = 0; i < strlen(str); i++)
+//    {
+//        if(!hash[str[i]])
+//            str[currentIndex++] = str[i];
+//    }
+//    str[currentIndex] = '\0';
+//    return str;
+//}
+//
+//int main()
+//{
+//    char s[2] = "a";     // 要删除的字母
+//    char s2[5] = "acau";  // 目标字符串
+//    printf("%s\n", deleteCharacters(s2, s));
+//    return 0;
+//}
 //                               C语言程序设计经典100例－－第三十三例
+
+//#define MAX 1000
+//
+//
+//int prime[MAX];
+//
+//int isPrimeNaive(int n)
+//{
+//    if(n <= 1)
+//        return 0;
+//    for(int i = 2; i < n; i++)
+//        if(n % i == 0)
+//            return 0;
+//    return 1;
+//}
+//
+//int isPrime(int n)
+//{
+//    if(n<= 1)
+//        return 0;
+//    if(n == 2)
+//        return 1;
+//    if(n%2 == 0)
+//        return 0;
+//    int limit = (int)sqrt((double)n);
+//    for(int i = 3; i <= limit; i=i+1)//这里我擅自把2改成了1 因为我觉得1是不会改变什么，只是增加了cpu占用，对于我这个初学的菜鸟 那就just so so啦！
+//    {
+//        if(n % i == 0)
+//            return 0;
+//    }
+//    return 1;
+//}
+//
+//void sieve()
+//{
+//    prime[0] = 0;
+//    prime[1] = 0;
+//    for(int i = 2; i < MAX; i++)
+//        prime[i] = 1;
+//    int limit = (int)sqrt((double)MAX);
+//    for(int i = 2; i <= limit; i++)
+//    {
+//        if(prime[i])
+//            for(int j = i*i; j <= MAX; j+=i)
+//                prime[j] = 0;
+//    }
+//}
+//
+//int isPrimeSieve(int n)
+//{
+//    if(prime[n])
+//        return 1;
+//    else
+//        return 0;
+//}
+//
+//int main()
+//{
+//    sieve();
+//    printf("N=%d %d\n", 1, isPrime(1));
+//    printf("N=%d %d\n", 2, isPrime(2));
+//    printf("N=%d %d\n", 3, isPrime(3));
+//    printf("N=%d %d\n", 4, isPrime(4));
+//    printf("N=%d %d\n", 7, isPrime(7));
+//    printf("N=%d %d\n", 9, isPrime(9));
+//    printf("N=%d %d\n", 13, isPrime(13));
+//    printf("N=%d %d\n", 17, isPrime(17));
+//    printf("N=%d %d\n", 100, isPrime(100));
+//    printf("N=%d %d\n", 23, isPrime(23));
+//    printf("N=%d %d\n", 1, isPrime(1));
+//    return 0;
+//}
 
 
