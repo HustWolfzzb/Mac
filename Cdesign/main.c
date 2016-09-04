@@ -1204,47 +1204,451 @@
 //     return 0;
 // }
 
+
 //                               C语言程序设计经典100例－－第三十七例
-#define N 10
-int main()
-{
-    int i,j,a[N],temp;
-    printf("请输入 10 个数字：\n");
-    for(i=0;i<N;i++)
-        scanf("%d",&a[i]);
-    for(i=0;i<N-1;i++)
-    {
-        int min=i;
-        for(j=i+1;j<N;j++)
-            if(a[min]>a[j]) min=j;
-        if(min!=i)
-        {
-            temp=a[min];
-            a[min]=a[i];
-            a[i]=temp;
-        }
-    }
-    printf("排序结果是:\n");
-    for(i=0;i<N;i++)
-        printf("%d ",a[i]);
-    printf("\n");
-    return 0;
-}
+// #define N 10
+// int main()
+// {
+//     int i,j,a[N],temp;
+//     printf("请输入 10 个数字：\n");
+//     for(i=0;i<N;i++)
+//         scanf("%d",&a[i]);
+////这个程序实在是精妙，首先，采用一个for循环（i）对从a[j] （j=i+1）到最后一个进行排序，每一次得出一个最小的值为a[min]；下一次在 a[i+1]开始进行排序，然后在外面套一个for循环，这样就可以多次循环从而分别使得a[i]中i与排序大小对应！
+//     for(i=0;i<N-1;i++)
+//     {
+//         int min=i;
+//         for(j=i+1;j<N;j++)
+//             if(a[min]>a[j]) min=j;
+//         if(min!=i)
+//         {
+//             temp=a[min];
+//             a[min]=a[i];
+//             a[i]=temp;
+//         }
+//     }
+// //到这儿最精彩的部分就结束了。
+//     printf("排序结果是:\n");
+//     for(i=0;i<N;i++)
+//         printf("%d ",a[i]);
+//     printf("\n");
+//     return 0;
+// }
+
 
 //                               C语言程序设计经典100例－－第三十八例
+// #define N 3
+// int main()
+// {
+//     int i,j,a[N][N],sum=0;
+//     printf("请输入矩阵(3*3)：\n");
+//     for(i=0;i<N;i++)
+//         for(j=0;j<N;j++)
+//             scanf("%d",&a[i][j]);
+//     for(i=0;i<N;i++)
+//         sum+=a[i][i];
+//     printf("对角线之和为：%d\n",sum);
+//     return 0;
+// }   
+// //这个程序也是很不错的。两个for嵌套循环的结构，很不错的想法！ 而且之后有用一个for进行sum的运算，能够应付很大的计算量。
 
 //                               C语言程序设计经典100例－－第三十九例
-//                               C语言程序设计经典100例－－第四十例
-//                               C语言程序设计经典100例－－第四十一例
-//                               C语言程序设计经典100例－－第四十二例
-//                               C语言程序设计经典100例－－第四十三例
-//                               C语言程序设计经典100例－－第四十四例
-//                               C语言程序设计经典100例－－第四十五例
-//                               C语言程序设计经典100例－－第四十六例
-//                               C语言程序设计经典100例－－第四十七例
-//                               C语言程序设计经典100例－－第四十八例
-//                               C语言程序设计经典100例－－第四十九例
-//                               C语言程序设计经典100例－－第五十例
-//                               C语言程序设计经典100例－－第五十一例 
 
+// int main()
+// {
+//     int a[11]={1,4,6,9,13,16,19,28,40,100};
+//     int temp1,temp2,number,end,i,j;
+//     printf("原始数组是:\n");
+//     for(i=0;i<10;i++)
+//         printf("%4d",a[i]);
+//     printf("\n插入一个新的数字: ");
+//     scanf("%d",&number);
+//     end=a[9];
+//     if(number>=end)
+//         a[10]=number;
+//     else
+//     {
+//         for(i=0;i<10;i++)
+//         {
+//             if(a[i]>number)
+//             {
+//                 temp1=a[i];
+//                 a[i]=number;
+//                 for(j=i+1;j<11;j++)
+//                 {
+//                     temp2=a[j];
+//                     a[j]=temp1;
+//                     temp1=temp2;
+//                 }
+//                 break;
+//             }
+//         }
+//     }
+//     for(i=0;i<11;i++)
+//         printf("%4d",a[i]);
+//     printf("\n");
+//     return 0;
+// }
+//                               C语言程序设计经典100例－－第四十例
+
+
+// #define N 10
+// int main()
+// {
+//     int a[N]={0,1,2,3,4,5,6,7,8,9};
+//     int i,t;
+//     printf("原始数组是:\n");
+//     for(i=0;i<N;i++)
+//         printf("%d ",a[i]);
+//     for(i=0;i<N/2;i++)
+//     {
+//         t=a[i];
+//         a[i]=a[N-1-i];
+//         a[N-1-i]=t;
+//     }
+//     printf("\n排序后的数组:\n");
+//     for(i=0;i<N;i++)
+//         printf("%d ",a[i]);
+//     printf("\n");
+//     return 0;
+// }
+
+// int main()
+// {
+//     int a[10]={0,1,2,3,4,5,6,7,8,9};
+//     int i;
+//     printf("原始数组是:\n");
+//     for(i=0;i<10;i++)
+//         printf("%d ",a[i]);
+//     int temp;
+//     for ( i = 0; i < 5; i++)
+//     {
+//         temp=a[i];
+//         a[i]=a[9-i];
+//         a[9-i]=temp;
+//     }
+//     for ( i = 0; i < 10; i++)
+//     {
+//         printf("\n新的逆序数组是：%d\n",a[i] );
+//     }
+   
+//     return 0;
+// }
+//                               C语言程序设计经典100例－－第四十一例
+
+
+// int main()
+// {
+//     void fun();
+//     for(int i=0;i<3;i++)
+//         fun();
+//     return 0;
+// }
+// void fun()
+// {
+//     int i=0;
+//     static int static_i=0;
+//     printf("i=%d\n",i);
+//     printf("static_i=%d\n",static_i);
+//     i++;
+//     static_i++;
+// }
+//                               C语言程序设计经典100例－－第四十二例
+
+// int main()
+// {
+//     int i,num;
+//     num=2;
+//     for(i=0;i<3;i++)
+//     {
+//         printf("num 变量为 %d \n",num);
+//         num++;
+//         {
+//             auto int num=1;
+//             printf("内置模块 num 变量为 %d \n",num);
+//             num++;
+//         }
+//     }
+//     return 0;
+// }
+//                               C语言程序设计经典100例－－第四十三例
+
+// int main()
+// {
+//     int i,num;
+//     num=2;
+//     for(i=0;i<3;i++)
+//     {
+//         printf("num 变量为 %d \n",num);
+//         num++;
+//         {
+//             static int num=1;
+//             printf("内置模块 num 变量为 %d\n",num);
+//             num++;
+//         }
+//     }
+//     return 0;
+// }
+
+//                               C语言程序设计经典100例－－第四十四例
+// int a,b,c;
+// void add()
+// {
+//     int a;
+//     a=3;
+//     c=a+b;
+// }
+// int main()
+// {
+//     a=b=4;
+//     add();//大兄弟啊。这里调用的是add 计算机会自动的从上面的add 定义下手开始从头到尾读一遍，就相当于是在add之前 a=4 执行add 过程中，程序做的第一件事就是给a赋值为3
+
+//     printf("c 的值为 %d\n",c);
+//     return 0;
+// }
+//                               C语言程序设计经典100例－－第四十五例
+
+// int main()
+// {
+//     register int i;
+//     int tmp=0;
+//     for(i=1;i<=100;i++)
+//         tmp+=i;
+//     printf("总和为 %d\n",tmp);
+//     return 0;
+// }
+//                               C语言程序设计经典100例－－第四十六例
+
+// #define TRUE 1
+// #define FALSE 0
+// #define SQ(x) (x)*(x)
+// int main()
+// {
+//     int num;
+//     int again=1;
+//     printf("如果值小于 50 程序将终止。\n");
+//     while(again)
+//     {
+//         printf("\n请输入数字：");
+//         scanf("%d",&num);
+//         printf("该数字的平方为 %d \n",SQ(num));
+//         if(num>=50)
+//             again=TRUE;
+//         else
+//             again=FALSE;
+//     }
+//     return 0;
+// }
+
+
+//                               C语言程序设计经典100例－－第四十七例
+
+// #define exchange(a,b) { int t;t=a;a=b;b=t;}//注意放在一行里
+// int main()
+
+// {
+//     int x=10;
+//     int y=20;
+//     printf("x=%d; y=%d\n",x,y);
+//     exchange(x,y);
+//     printf("x=%d; y=%d\n",x,y);
+//     return 0;   
+// }
+//                               C语言程序设计经典100例－－第四十八例
+// #define LAG >
+// #define SMA <
+// #define EQ ==
+// #include <stdio.h>
+// int main()
+// {
+//     int i,j;
+//     printf("请输入两个数字：\n");
+//     scanf("%d %d",&i,&j);
+//     if(i LAG j)
+//         printf("%d 大于 %d \n",i,j);
+//     else if(i EQ j)
+//         printf("%d 等于 %d \n",i,j);
+//     else if(i SMA j)
+//         printf("%d 小于 %d \n",i,j);
+//     else
+//         printf("没有值。\n");
+//     return 0;
+// }
+//                               C语言程序设计经典100例－－第四十九例
+
+
+// #define MAX
+// #define MAXIMUM(x,y)(x>y)?x:y
+// #define MINIMUM(x,y) (x>y)?y:x
+// int main()
+// {
+//     int a=10,b=20;
+// #ifdef MAX
+//     printf("更大的数字是 %d\n",MAXIMUM(a,b));
+// #else
+//     printf("更小的数字是 %d\n",MINIMUM(a,b));
+// #endif
+// #ifndef MIN
+//     printf("更小的数字是 %d\n",MINIMUM(a,b));
+// #else
+//     printf("更大的数字是 %d\n",MAXIMUM(a,b));
+// #endif
+// #undef MAX
+// #ifdef MAX
+//     printf("更大的数字是 %d\n",MAXIMUM(a,b));
+// #else
+//     printf("更小的数字是 %d\n",MINIMUM(a,b));
+// #endif
+// #define MIN
+// #ifndef MIN
+//     printf("更小的数字是 %d\n",MINIMUM(a,b));
+// #else
+//     printf("更大的数字是 %d\n",MAXIMUM(a,b));
+// #endif
+//     return 0;
+// }
+
+
+
+
+//                               C语言程序设计经典100例－－第五十例
+
+
+
+
+// test.h 文件代码如下：
+// #define LAG >
+// #define SMA <
+// #define EQ ==
+// 主文件代码：
+// //  Created by www.runoob.com on 15/11/9.
+// //  Copyright © 2015年 菜鸟教程. All rights reserved.
+// //
+
+// #include "test.h"  
+// #include <stdio.h>
+
+// int main()
+// {
+//     int i=10;
+//     int j=20;
+//     if(i LAG j)
+//         printf("%d 大于 %d \n",i,j);
+//     else if(i EQ j)
+//         printf("%d 等于 %d \n",i,j);
+//     else if(i SMA j)
+//         printf("%d 小于 %d \n",i,j);
+//     else
+//         printf("没有值。\n");
+//     return 0;
+// }
+
+
+
+//                               C语言程序设计经典100例－－第五十一例
+
+// int main()
+// {
+//     int a,b;
+//     a=077;
+//     b=a&3;
+//     printf("a & b(decimal) 为 %d \n",b);
+//     b&=7;
+//     printf("a & b(decimal) 为 %d \n",b);
+//     return 0;
+// }
+
+
+//                               C语言程序设计经典100例－－第五十二例
+
+
+// int main()
+// {
+//     int a,b;
+//     a=077;
+//     b=a|3;
+//     printf("b 的值为 %d \n",b);
+//     b|=7;
+//     printf("b 的值为 %d \n",b);
+//     return 0;
+// }
+//                               C语言程序设计经典100例－－第五十三例
+
+
+// int main()
+// {
+//     int a,b;
+//     a=077;
+//     b=a^3;
+//     printf("b 的值为 %d \n",b);
+//     b^=7;
+//     printf("b 的值为 %d \n",b);
+//     return 0;
+// }
+
+//                               C语言程序设计经典100例－－第五十四例
+
+
+// int main()
+// {
+//     unsigned a,b,c,d;
+//     printf("请输入整数：\n");
+//     scanf("%o",&a);
+//     b=a>>4;
+//     c=~(~0<<4);
+//     d=b&c;
+//     printf("%o\n%o\n",a,d);
+//     return 0;
+// }
+//                               C语言程序设计经典100例－－第五十五例
+
+// int main()
+// {
+//     int a,b;
+//     a=234;
+//     b=~a;
+//     printf("a 的按位取反值为（十进制） %d \n",b);
+//     a=~a;
+//     printf("a 的按位取反值为（十六进制） %x \n",a);
+//     return 0;
+// }
+
+
+//                               C语言程序设计经典100例－－第五十六例
+
+
+// #include <graphics.h> //VC6.0中是不能运行的，要在Turbo2.0/3.0中  
+// int main()   
+// {  
+//     int driver,mode,i;   
+//     float j=1,k=1;   
+//     driver=VGA;  
+//     mode=VGAHI;   
+//     initgraph(&driver,&mode,"");   
+//     setbkcolor(YELLOW);   
+
+//     for(i=0;i<=25;i++)   
+//     {   
+//         setcolor(8);   
+//         circle(310,250,k);   
+//         k=k+j;   
+//     j=j+0.3;   
+//     }   
+//     return 0;  
+// } 
+//                               C语言程序设计经典100例－－第五十七例
+
+//                               C语言程序设计经典100例－－第五十八例
+
+//                               C语言程序设计经典100例－－第五十九例
+
+//                               C语言程序设计经典100例－－第六十例
+//                               C语言程序设计经典100例－－第六十一例
+//                               C语言程序设计经典100例－－第六十二例
+//                               C语言程序设计经典100例－－第六十三例
+//                               C语言程序设计经典100例－－第六十四例
+//                               C语言程序设计经典100例－－第六十五例
+//                               C语言程序设计经典100例－－第六十六例
+//                               C语言程序设计经典100例－－第六十七例
+//                               C语言程序设计经典100例－－第六十八例
+//                               C语言程序设计经典100例－－第六十九例
 
